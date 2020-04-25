@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>minute by minute time</title>
+
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge; IE=11; IE=10; IE=9; IE= 8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href= "css/style.css">
+
+
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+</head>
+<body onload="getminuteweatherforthishour();">
+<style>
+body{ background: url("images/background.jpg") no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+</style>
+
+<div class="container">
+<h1>Next One Hour</h1>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>Time</th>
+					<th>Precipitation Intensity</th>
+					<th>Precipiation Intensity Error</th>
+					<th>Precipitation Type</th>
+					<th>Precipiation Probability</th>
+
+				</tr>
+			</thead>
+			<tbody id="thishourtable">
+
+			</tbody>
+		</table>
+	</div>
+
+<script src="js/appjs.js"></script>
+</body>
+</html>
